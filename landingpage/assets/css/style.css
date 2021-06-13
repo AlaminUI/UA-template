@@ -139,6 +139,13 @@ header {
     height: 100%;
     position: relative;
     z-index: 2;
+    padding: 48px 0;
+}
+.banner-inner.index2-banner {
+    padding: 72px 0px;
+}
+.banner-inner.index3-banner {
+    padding: 8.5% 0px;
 }
 .banner-inner.banner-overlay:after {
     background: #00000070;
@@ -150,6 +157,7 @@ header {
     content: "";
     z-index: -1;
 }
+
 .form-col input {
     display: block;
     width: 100%;
@@ -660,5 +668,8 @@ footer h3 {
     .header-left-box-top p {
         font-size: 16px;
         line-height: 21px;
+    }
+    .banner-inner.index2-banner {
+        padding: 40px 0px;
     }
 }
