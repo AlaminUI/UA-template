@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subcription Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        .header-logo {
+    text-align: center;
+    padding: 40px 0px;
+}
+.header-logo img {
+    width: 100%;
+    max-width: 400px;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.banner-section {
+    background: url(https://images.unsplash.com/photo-1528819027803-5473f2bf7633?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+.banner-area h1 {
+    font-size: 90px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.header-logo img {
+    width: 100%;
+    max-width: 400px;
+}
+
+main {
+    padding: 72px 0px;
+}
+
+.form-title  h2 {
+    font-size: 32px;
+    color: #a30524;
+    text-transform: uppercase;
+}
+
+.single-input input {
+    display: block;
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.single-input {
+    margin-bottom: 24px;
+}
+
+.single-input textarea {
+    width: 100%;
+    height: 180px;
+    padding: 16px;
+}
+
+.single-input label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 500;
+}
+
+.form-title {
+    padding-bottom: 32px;
+}
+
+form button {
+    display: inline-block;
+    background: #a30524;
+    color: #fff;
+    border: none;
+    padding: 8px 32px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 32px;
+}
+h4.qustion-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+h4.qustion-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.single-checkbox label {
+    font-size: 16px;
+    font-style: italic;
+    margin-left: 4px;
+}
+
+.single-checkbox {
+    margin-bottom: 10px;
+}
+
+.form-checkbox {
+    margin-bottom: 24px;
+}
+
+.form-radio {
+    margin-bottom: 24px;
+}
+
+.single-radio {
+    margin-bottom: 10px;
+}
+
+.single-checkbox label {
+    font-size: 16px;
+    font-style: italic;
+    position: relative;
+    padding-left: 28px;
+}
+.single-checkbox input {
+display: none;
+}
+
+.single-checkbox label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 7px;
+
+}
+.single-checkbox label:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    border: 1px solid #a30524;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 3px;
+}
+.single-checkbox input:checked + label:after {
+    width: 4px;
+    height: 11px;
+    border: solid #a30524;
+    border-width: 0 2px 2px 0;
+    transform: rotate(
+45deg
+);
+    z-index: 999;
+
+}
+
+/* radio buttons  */
+.single-radio label {
+    font-size: 16px;
+    font-style: italic;
+    position: relative;
+    padding-left: 28px;
+}
+.single-radio input {
+display: none;
+}
+
+.single-radio label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 7px;
+}
+.single-radio label:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    border: 1px solid #a30524;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+.single-radio input:checked + label:after {
+    width: 11px;
+    height: 11px;
+    z-index: 999;
+    background: #a30524;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+}
+.form-selection {
+    margin-bottom: 24px;
+}
+
+/* selection  */
+.selection-box {
+    display: flex;
+}
+
+.single-selection input {
+    display: none;
+}
+
+.single-selection label {
+    font-size: 16px;
+    display: block;
+    padding: 8px 16px;
+    border: 1px solid #80808045;
+    cursor: pointer;
+    font-style: italic;
+    transition: 0.5s;
+}
+.single-selection input:checked + label {
+
+    background: #a30524;
+    color:#fff;
+    border-color:#a30524;
+
+}
+
+/* drop down  */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid #CCD1DF !important;
+    background-image: none;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select */
+  .select {
+    position: relative;
+    display: flex;
+    width: 100%;
+    line-height: 3;
+    overflow: hidden;
+  }
+  select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    cursor: pointer;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+    color: #000000cc;
+    font-size: 12px;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #BD2036;
+  }
+  select.question-field {
+    width: 100%;
+    padding: 8px 8px;
+    color: #808080e0;
+    border: 1px solid #CCD1DF;
+    font-size: 16px;
+}
+  .form-drop-down {
+    max-width: 335px;
+ 
+}
+@media (max-width:767px){
+    .banner-area h1 {
+    font-size: 56px;
+
+}
+.header-logo img {
+    width: 100%;
+    max-width: 250px;
+}
+.banner-section {
+    height: 250px;
+}
+.form-title  h2 {
+    font-size: 24px;
+}
+.header-logo {
+    padding: 24px 0px;
+}
+}
+    </style>
+</head>
+<body>
+    
+<Header>
+    <div class="header-logo">
+        <img src="http://fuel.uafoundation.org/rs/232-BSG-320/images/logo.png" alt="logo">
+    </div>
+</header>
+
+<div class="banner-section">
+    <div class="banner-area">
+        <h1>Event Title</h1>
+    </div>
+</div>
+
+
+<main>
+    <div class="container">
+        <div class="form-area">
+            <!-- tite  -->
+            <div class="form-title">
+                <h2>I'd like to register for name of event</h2>
+            </div>
+
+         <form action="">
+             
+                <!-- single input field  -->
+            <div class="form-input-field">
+                <div class="single-input">
+                    <label for="input1">Field</label>
+                    <input id="input1" type="text">
+                </div>
+            </div>
+
+                <!-- single input field  -->
+            <div class="form-input-field">
+                <div class="single-input">
+                    <label for="input1">Field</label>
+                    <input id="input1" type="text">
+                </div>
+            </div>
+
+                <!-- single input field  -->
+            <div class="form-input-field">
+                <div class="single-input">
+                    <label for="input1">Field</label>
+                    <input id="input1" type="text">
+                </div>
+            </div>
+
+                <!-- single input field  -->
+            <div class="form-input-field">
+                <div class="single-input">
+                    <label for="input1">Field</label>
+                    <input id="input1" type="text">
+                </div>
+            </div>
+
+            <!-- single input field  -->
+            <div class="form-input-field text-area">
+                <div class="single-input">
+                    <label for="textarea">A question with a long written answer?</label>
+                    <textarea name="" id="textarea"></textarea>
+                </div>
+            </div>
+
+                <!-- checkbox  -->
+            <div class="form-checkbox">
+                <h4 class="qustion-title">A question with a checkbox answer?</h4>
+                <!-- single checkbox  -->
+                <div class="single-checkbox">
+                    <input type="checkbox" id="answer1" name="" value="answer">
+                    <label for="answer1"> One Answer</label>
+                </div>
+                <!-- single checkbox  -->
+                <div class="single-checkbox">
+                    <input type="checkbox" id="answer2" name="" value="answer">
+                    <label for="answer2"> One Answer</label>
+                </div>
+                <!-- single checkbox  -->
+                <div class="single-checkbox">
+                    <input type="checkbox" id="answer3" name="" value="answer">
+                    <label for="answer3"> One Answer</label>
+                </div>
+                <!-- single checkbox  -->
+                <div class="single-checkbox">
+                    <input type="checkbox" id="answer4" name="" value="answer">
+                    <label for="answer4"> One Answer</label>
+                </div>
+
+            </div>
+
+                <!-- radio  -->
+            <div class="form-radio">
+                <h4 class="qustion-title">A question with a radial answer?</h4>
+
+                <!-- single radio  -->
+                <div class="single-radio">
+                    <input type="radio" id="radio1" name="answer" value="answer">
+                    <label for="radio1"> One Answer</label>
+                </div>
+                <!-- single radio  -->
+                <div class="single-radio">
+                    <input type="radio" id="radio2" name="answer" value="answer">
+                    <label for="radio2"> One Answer</label>
+                </div>
+                <!-- single radio  -->
+                <div class="single-radio">
+                    <input type="radio" id="radio3" name="answer" value="answer">
+                    <label for="radio3"> One Answer</label>
+                </div>
+                <!-- single radio  -->
+                <div class="single-radio">
+                    <input type="radio" id="radio4" name="answer" value="answer">
+                    <label for="radio4"> One Answer</label>
+                </div>
+
+            </div>
+
+            <!-- Selection  -->
+            <div class="form-selection">
+                <h4 class="qustion-title">Selection</h4>
+      
+                    <div class="selection-box">
+                                    <!-- single checkbox  -->
+                  <div class="single-selection">
+                    <input type="radio" id="selection1" name="selection" value="answer">
+                    <label for="selection1"> Chicken</label>
+                </div>
+                
+
+                  <!-- single checkbox  -->
+                  <div class="single-selection">
+                    <input type="radio" id="selection2" name="selection" value="answer">
+                    <label for="selection2"> Beef</label>
+                </div>
+
+                  <!-- single checkbox  -->
+                  <div class="single-selection">
+                    <input type="radio" id="selection3" name="selection" value="answer">
+                    <label for="selection3"> Vegetarian</label>
+                </div>
+
+                  <!-- single checkbox  -->
+                  <div class="single-selection">
+                    <input type="radio" id="selection4" name="selection" value="answer">
+                    <label for="selection4"> None</label>
+                </div>
+                    </div>
+
+            </div>
+
+
+
+                   
+             <!-- form-drop-down  -->
+             <div class="form-drop-down">
+                <h4 class="qustion-title">Selection</h4>
+                <div class="select">
+                    <select name="slct" class="question-field">
+                      <option selected disabled>Drop Down Question</option>
+                      <option value="1">Question 1</option>
+                      <option value="2">Question 2</option>
+                      <option value="3">Question 3</option>
+                    </select>
+                  </div>
+            </div>
+
+
+<button type="submit"> Submit</button>
+         </form>
+
+        </div>
+    </div>
+</main>
+
+
+</body>
+</html>
