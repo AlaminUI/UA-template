@@ -183,8 +183,8 @@ header {
 }
 
 .singup-form form button {
-    background: #BD2036;
-    border: 1px solid #707070;
+    background-color: #58000d;
+    border: 1px solid #4e000c;
     color: #fff;
     padding: 13px 58px;
     font-size: 22px;
@@ -198,7 +198,8 @@ header {
     -o-transition: 0.5s;
 }
 .singup-form form button:hover {
-    opacity: 0.8;
+    background-color: #ab0520;
+    border:1px solid #ab0520;
 }
 .form-row {
     display: flex;
@@ -332,7 +333,8 @@ select {
 }
 
 .single-service a {
-    background: #BD2036;
+    background-color: #58000d;
+    border:1px solid #4e000c;
     color: #fff;
     font-size: 22px;
     text-decoration: none;
@@ -347,7 +349,8 @@ select {
     -o-transition: 0.5;
 }
 .single-service a:hover {
-opacity: 0.8;
+    background-color: #ab0520;
+    border:1px solid #ab0520;
 }
 .service-title {
     margin-bottom: 32px;
