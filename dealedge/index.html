@@ -7,7 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
       <style>
-          @font-face{font-family:"Tiempos";src:url(fonts/TiemposTextWeb-Regular.woff2);font-weight:400;font-style:normal}
+          @font-face {
+    font-family: "Tiempos";
+    src: url("fonts/TiemposTextWeb-Regular.eot");
+    src: url("fonts/TiemposTextWeb-Regular.eot?#iefix") format("embedded-opentype"),url("fonts/TiemposTextWeb-Regular.woff2") format("woff2"),url("fonts/TiemposTextWeb-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
 @font-face{font-family:"Graphik";src:url(fonts/Graphik-Regular-Web.woff2);font-weight:400;font-style:normal;font-stretch:normal}
 @font-face{font-family:"Graphik";src:url(fonts/Graphik-Medium-Web.woff2);font-weight:500;font-style:normal;font-stretch:normal}
 @font-face{font-family:"Graphik";src:url(fonts/Graphik-Semibold-Web.woff2);font-weight:600;font-style:normal;font-stretch:normal}
@@ -50,7 +56,7 @@ body.bg-dark:after{position:absolute;background:rgba(0,0,0,0.3);width:100%;heigh
 header{padding-top:68px}
 .header-left h1{font-size:40px;line-height:1.2;font-weight:500}
 .header-right h2{font-size:36px;font-family:"Tiempos",Georgia,serif;color:#000;font-weight:400;line-height:1.44}
-.header-right{padding-left:20px}
+.header-right{padding-left:20px;max-width: 846px;}
 .header-right a{color:#000;border-bottom:1px solid #c00;text-decoration:none;-webkit-transition:.5s;-o-transition:.5s;transition:.5s}
 .header-right h2 a:hover{color:#c00}
 .contact-form-box form{margin:0 auto}
